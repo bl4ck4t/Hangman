@@ -1,0 +1,147 @@
+.hangman--container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: wrap;
+}
+
+.component--container {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hd__root--div {
+    position: relative;
+}
+
+.hd__hl--bottom {
+    height: 10px;
+    width: 250px;
+    background: #000;
+}
+
+.hd__hl--top {
+    height: 10px;
+    width: 200px;
+    background: #000;
+    margin-left: 120px;
+}
+
+.hd__vl {
+    height: 400px;
+    width: 10px;
+    background: #000;
+    margin-left: 120px;
+}
+
+.hd__rope {
+    height: 50px;
+    width: 10px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.head {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 10px solid black;
+    position: absolute;
+    top: 50px;
+    right: -30px;
+}
+
+.body {
+    width: 10px;
+    height: 100px;
+    border-radius: 100%;
+    background: black;
+    position: absolute;
+    top: 120px;
+    right: 0px;
+}
+
+.r_arm {
+    width: 100px;
+    height: 10px;
+    border-radius: 100%;
+    background: black;
+    position: absolute;
+    top: 150px;
+    right: -100px;
+    rotate: -30deg;
+    transform-origin: left bottom;
+}
+
+.l_arm {
+    width: 100px;
+    height: 10px;
+    border-radius: 100%;
+    background: black;
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    rotate: 30deg;
+    transform-origin: right bottom;
+}
+
+.r_leg {
+    width: 100px;
+    height: 10px;
+    border-radius: 100%;
+    background: black;
+    position: absolute;
+    top: 210px;
+    right: -90px;
+    rotate: 60deg;
+    transform-origin: left bottom;
+}
+
+.l_leg {
+    width: 100px;
+    height: 10px;
+    border-radius: 100%;
+    background: black;
+    position: absolute;
+    top: 210px;
+    right: 0px;
+    rotate: -60deg;
+    transform-origin: right bottom;
+}
+
+.h_word {
+    display: flex;
+    gap: 0.25em;
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+.h_word--answer {
+    border-bottom: .1em solid #000;
+}
+
+.h_word--hiddenAnswer {
+    visibility: hidden;
+}
+
+.h_word--visibleAnswer {
+    visibility: visible;
+}
+
+.keyboard-component {
+    align-self: stretch;
+}
+
+.keyboard-frame {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    gap: 0.5rem;
+}
